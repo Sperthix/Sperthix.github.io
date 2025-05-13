@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Golf-resort</title>
+    <script type="module" crossorigin src="/assets/index-CfyfABjz.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-8YIRAL7c.css">
+  </head>
+  <body>
+
+    <header class="wrapper relative">
+      <div class="flex justify-between mt-11">
+        <img src="data:image/png;base64,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" alt="logo" class="w-auto h-12">
+        <nav class="max-lg:hidden">
+          <ul class="flex gap-2.5 border border-[var(--color)] rounded-s-full rounded-full px-12 box-border">
+            <li><button class="nav-item">Golfový areál</button></li>
+            <li><button class="nav-item">Služby</button></li>
+            <li><button class="nav-item">Akcie</button></li>
+            <li><button class="nav-item">O nás</button></li>
+            <li><button class="nav-item">Kontakt</button></li>
+          </ul>
+        </nav>
+        <div class="flex items-center justify-center">
+          <button class="flex items-center justify-center">
+            <span>SK</span>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAQCAYAAADwMZRfAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACbSURBVHgB7ZG9DcJADIXf3aXnpwcs3RKMwQrZJEwATIDo6JiBQRCGAZAXOJmkA+cSKUW6fOXnp2dLBiZGwVkRV7RTj0NHXpzi+Hjz5VcWrdYAgYI6SpA87tYFKz4ivJzNF/WN21aD4vR88dVqj/y2SgE2mhufy2dLmFm8Q/knHarGYyiR6BY3pHFN575c0TdMQBnq/yWHPSYG8QUw4ij7WuwMTgAAAABJRU5ErkJggg==" alt="sipka dole">
+          </button>
+          <button id="menu-btn" class="flex flex-col items-center justify-center w-11 h-11 bg-[var(--color-primary)] rounded-full group">
+            <span class="bar w-4 h-0.5 bg-white mb-1 transition-transform duration-300"></span>
+            <span class="bar w-4 h-0.5 bg-white mb-1 transition-opacity duration-300"></span>
+            <span class="bar w-4 h-0.5 bg-white transition-transform duration-300"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Megamenu Wrapper -->
+      <div id="megamenu" class="hidden absolute left-0 top-full w-full bg-white border-t border-gray-200 z-50">
+        <div class="max-w-screen-xl mx-auto px-6 py-10 grid grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- 1. stlpec -->
+          <div>
+            <h3 class="font-semibold mb-3">Golfový areál</h3>
+            <ul class="space-y-1 text-sm">
+              <li>18-jamkové ihrisko</li>
+              <li>9 jamková akadémia</li>
+              <li>Driving Range</li>
+              <li>Footgolf akadémia</li>
+              <li>Turnaje</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-3">Cenníky a poplatky</h3>
+            <ul class="space-y-1 text-sm">
+              <li>Členstvo v klube GKBO</li>
+              <li>Individuálne členstvo 2025</li>
+              <li>Firemné hracie fee</li>
+              <li>9 jamková akadémia 2025</li>
+              <li>Reciprocita</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-3">Služby</h3>
+            <ul class="space-y-1 text-sm">
+              <li>Green Tree Restaurant</li>
+              <li>Ubytovanie</li>
+              <li>Golf shop</li>
+              <li>Nabíjanie elektromobilov</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-3">Turnaje</h3>
+            <ul class="space-y-1 text-sm">
+              <li>Eclectic Borša HCP day</li>
+              <li>Majstrovstvá GKHB</li>
+              <li>Dámska Tour 2024</li>
+              <li>Senior Borša Tour 2025 (50+)</li>
+              <li>Sunset junior HCP day</li>
+              <li>Ryder Cup</li>
+              <li>Hole in one</li>
+            </ul>
+          </div>
+          <!-- 2. riadok -->
+          <div>
+            <h3 class="font-semibold mb-3">Akcie</h3>
+            <ul class="space-y-1 text-sm">
+              <li>Firemné akcie</li>
+              <li>Detský golfový tábor</li>
+              <li>Galéria</li>
+              <li>Fotografie</li>
+              <li>Videá</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-3">O nás</h3>
+            <ul class="space-y-1 text-sm">
+              <li>Green Resort Hrubá Borša</li>
+              <li>Areál golfového ihriska</li>
+              <li>Aktuality</li>
+              <li>Články</li>
+              <li>Tipy a novinky</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-3">Juniori</h3>
+            <ul class="space-y-1 text-sm">
+              <li>Centrum talentovanej mládeže</li>
+              <li>Tréningy</li>
+              <li>Podmienky CTM GKHB 2025</li>
+              <li>Rozdelenie hráčov</li>
+              <li>Ročný členský poplatok</li>
+              <li>Príprava a tréningový proces</li>
+              <li>3 green fee</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-3">Kontakt</h3>
+            <ul class="space-y-1 text-sm">
+              <li>Otváracia doba</li>
+              <li>Kontaktné údeje</li>
+              <li>Adresa</li>
+              <li>Bankové spojenie</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </header>
+
+    <main class="wrapper">
+
+      <!-- Hero section -->
+      <section class="flex flex-col items-center justify-center mt-20 lg:mt-32">
+        <cta-button text="Golfové ihrisko Borša"></cta-button>
+        <h1 class="max-w-[920px] text-center mt-12">Objavte krásy golfu na našom ihrisku!</h1>
+        <div class="relative w-full h-[450px] lg:h-[672px] mt-16 lg:mt-28 p-2 lg:p-8 bg-cover bg-center rounded-[15px]" style="background-image: url('/assets/hero-CNM9pJHV.png');">
+          <img src="/assets/golfova-lopticka-CKR-wA-s.png"
+          alt="Golfová loptička"
+          class="absolute -top-5 lg:-top-15 left-1/5 -translate-x-1/2 w-17.5 h-17.5 lg:w-50 lg:h-50 object-contain z-10" />
+
+          <!-- Inner -->
+          <div class="flex flex-col items-end justify-between h-full">
+
+            <!-- Mapa ihriska -->
+            <button class="flex items-center justify-center gap-0 cursor-pointer">
+              <a href="${href}"><span class="flex items-center rounded-full text-white border border-[#FFFFFF4D] px-8.5 py-2 hover:bg-white hover:text-black transition">
+                Mapa ihriska
+              </a></span>
+              <div class="flex items-center justify-center p-3 rounded-full border border-[#FFFFFF4D] h-[35px] w-[35px]">
+                <img src="data:image/svg+xml,%3csvg%20width='13'%20height='11'%20viewBox='0%200%2013%2011'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20id='Vector'%20d='M6.875%201L11.375%205.5L6.875%2010M10.75%205.5L1.625%205.5'%20stroke='white'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" alt="sipka vpravo" class="w-3.5 h-3.5">
+              </div>
+            </button>
+
+            <!-- Bottom -->
+            <div class="flex justify-between w-full">
+
+              <!-- Prehrat -->
+              <div class="flex items-center justify-center gap-0 lg:gap-6.5 self-end mt-auto">
+                <button class="max-lg:scale-[0.5]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="82" height="82" viewBox="0 0 82 82" fill="none">
+                    <foreignObject x="-5.7" y="-5.7" width="93.4" height="93.4"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(2.85px);clip-path:url(#bgblur_0_34_469_clip_path);height:100%;width:100%"></div></foreignObject><g data-figma-bg-blur-radius="5.7">
+                      <circle cx="41" cy="41" r="41" fill="#F2F2F2" fill-opacity="0.07"/>
+                      <circle cx="41" cy="41" r="40.5" stroke="white" stroke-opacity="0.5"/>
+                    </g>
+                    <path d="M35.5 47.1299L35.5 34.8701L46.0088 41L35.5 47.1299Z" stroke="white"/>
+                    <defs>
+                      <clipPath id="bgblur_0_34_469_clip_path" transform="translate(5.7 5.7)"><circle cx="41" cy="41" r="41"/>
+                    </clipPath></defs>
+                  </svg>
+                </button>
+                <span class="text-white text-[1rem] font-medium underline">Prehrať video</span>
+              </div>
+  
+              <!-- Text -->
+              <div class="max-lg:hidden self-end ml-auto mt-auto w-[30%] py-6 px-4 rounded-[5px] border border-white/50 bg-[rgba(242,242,242,0.07)] backdrop-blur-[2.85px]">
+                <p class="text-white text-[1rem] leading-[1.5625rem]">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur lectus eu metus facilisis egestas.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Areal -->
+      <section class="flex flex-col items-center justify-center mt-18 lg:mt-40">
+        <h2 class="text-center">Preskúmajte golfový areál</h2>
+        <p class="max-w-[500px] mt-11 lg:mt-18 test-center">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur lectus eu metus facilisis egestas.
+        </p>
+      
+        <div class="mt-16 flex flex-col lg:flex-row items-center justify-between max-lg:gap-11 w-full lg:px-20">
+      
+          <!-- ĽAVÁ časť - Galéria -->
+          <div class="flex flex-col items-center gap-6">
+            <div class="flex -space-x-6">
+              <img src="/assets/circle1-DCtWP3Q6.png" alt="gal1" class="w-24 h-24 rounded-full object-cover ring-4 ring-white" />
+              <img src="/assets/circle2-DtxdR42L.png" alt="gal2" class="w-24 h-24 rounded-full object-cover ring-4 ring-white" />
+              <img src="/assets/circle3-DXnHobsJ.png" alt="gal3" class="w-24 h-24 rounded-full object-cover ring-4 ring-white" />
+            </div>
+            <cta-button text="Galéria" href="/galeria"></cta-button>
+          </div>
+      
+          <!-- STREDNÁ časť - slider karta -->
+          <div class="relative w-[320px] h-[440px]">
+            <!-- Stacked pozadie -->
+            <div class="absolute top-4 left-4 w-full h-full rounded-2xl bg-gray-300 z-0"></div>
+            <div class="absolute top-2 left-2 w-full h-full rounded-2xl bg-gray-200 z-10"></div>
+      
+            <!-- Aktívna karta -->
+            <div class="relative w-full h-full rounded-2xl overflow-hidden z-20 bg-white shadow-lg">
+              <img src="/assets/flip-up-1-Bf7ZAvY-.png" alt="Ihrisko" class="w-full h-full object-cover" />
+              <div class="absolute top-4 right-4 w-8 h-8 rounded-full bg-white text-black flex items-center justify-center text-lg">
+                ⤢
+              </div>
+              <div class="absolute bottom-0 left-0 right-0 bg-white text-center py-4">
+                <p class="font-semibold text-sm">18-jamkové majstrovské ihrisko</p>
+              </div>
+            </div>
+          </div>
+      
+          <!-- PRAVÁ časť - Mapa ihriska -->
+          <div class="flex flex-col items-center gap-6">
+            <img src="/assets/mapka-Cdh8bQj6.png" alt="mapa" class="rounded-2xl w-[200px] h-[140px] object-cover" />
+            <cta-button text="Zistíte viac o areáli"></cta-button>
+          </div>
+      
+        </div>
+      </section>
+      
+
+      <!-- Sluzby -->
+      <section class="mt-18 lg:mt-40">
+        <div>
+
+          <div class="flex flex-col lg:flex-row justify-between items-center mb-10">
+            <h2 class="max-lg:text-center">Využite naše služby</h2>
+            <p class="lg:w-1/3 max-lg:text-center">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur lectus eu metus facilisis egestas.
+            </p>
+          </div>
+          <div class="flex items-center justify-center lg:justify-start">
+            <cta-button text="Naše služby"></cta-button>
+          </div>
+      
+          <!-- Swiper slider -->
+          <div class="swiper swiper-services relative !overflow-visible">
+            <div class="swiper-wrapper items-stretch">
+
+              <!-- Slide -->
+              <div class="swiper-slide swiper-slide-service"
+                    style="background-image: url('/assets/sluzby-DryS0I-C.png');">  
+                <div class="flex flex-col justify-between h-full">
+                  <!-- Top: štítok a ikona -->
+                  <div class="flex items-center justify-between">
+                    <div class="swiper-slide-heading">
+                      Ubytovanie
+                    </div>
+                    <button class="swiper-btn-link">
+                      <img src="data:image/svg+xml,%3csvg%20width='17'%20height='17'%20viewBox='0%200%2017%2017'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='arrow-up-right'%3e%3cpath%20id='Vector%20(Stroke)'%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M5.03033%205.25C5.03033%204.83579%205.36612%204.5%205.78033%204.5H11.7907C12.205%204.5%2012.5407%204.83579%2012.5407%205.25V11.2604C12.5407%2011.6746%2012.205%2012.0104%2011.7907%2012.0104C11.3765%2012.0104%2011.0407%2011.6746%2011.0407%2011.2604V7.06066L5.78033%2012.3211C5.48744%2012.614%205.01256%2012.614%204.71967%2012.3211C4.42678%2012.0282%204.42678%2011.5533%204.71967%2011.2604L9.98008%206H5.78033C5.36612%206%205.03033%205.66421%205.03033%205.25Z'%20fill='%23231F20'/%3e%3c/g%3e%3c/svg%3e" alt="sipka doprava-hore" class="w-4 h-4">
+                    </button>
+                  </div>
+                  <!-- Bottom: text -->
+                  <div class="swiper-slide-textarea">
+                    <h3>Ubytovanie</h3>
+                    <p class="mt-6 mb-0 lg:mt-8 lg:mb-12">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur lectus eu metus facilisis egestas.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide -->
+              <div class="swiper-slide swiper-slide-service"
+              style="background-image: url('/assets/sluzby-DryS0I-C.png');">  
+                <div class="flex flex-col justify-between h-full">
+                  <!-- Top: štítok a ikona -->
+                  <div class="flex items-center justify-between">
+                    <div class="swiper-slide-heading">
+                      Ubytovanie
+                    </div>
+                    <button class="swiper-btn-link">
+                      <img src="data:image/svg+xml,%3csvg%20width='17'%20height='17'%20viewBox='0%200%2017%2017'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='arrow-up-right'%3e%3cpath%20id='Vector%20(Stroke)'%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M5.03033%205.25C5.03033%204.83579%205.36612%204.5%205.78033%204.5H11.7907C12.205%204.5%2012.5407%204.83579%2012.5407%205.25V11.2604C12.5407%2011.6746%2012.205%2012.0104%2011.7907%2012.0104C11.3765%2012.0104%2011.0407%2011.6746%2011.0407%2011.2604V7.06066L5.78033%2012.3211C5.48744%2012.614%205.01256%2012.614%204.71967%2012.3211C4.42678%2012.0282%204.42678%2011.5533%204.71967%2011.2604L9.98008%206H5.78033C5.36612%206%205.03033%205.66421%205.03033%205.25Z'%20fill='%23231F20'/%3e%3c/g%3e%3c/svg%3e" alt="sipka doprava-hore" class="w-4 h-4">
+                    </button>
+                  </div>
+                  <!-- Bottom: text -->
+                  <div class="swiper-slide-textarea">
+                    <h3>Ubytovanie</h3>
+                    <p class="mt-8 mb-12">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur lectus eu metus facilisis egestas.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide -->
+              <div class="swiper-slide swiper-slide-service"
+              style="background-image: url('/assets/sluzby-DryS0I-C.png');">  
+                <div class="flex flex-col justify-between h-full">
+                  <!-- Top: štítok a ikona -->
+                  <div class="flex items-center justify-between">
+                    <div class="swiper-slide-heading">
+                      Ubytovanie
+                    </div>
+                    <button class="swiper-btn-link">
+                      <img src="data:image/svg+xml,%3csvg%20width='17'%20height='17'%20viewBox='0%200%2017%2017'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='arrow-up-right'%3e%3cpath%20id='Vector%20(Stroke)'%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M5.03033%205.25C5.03033%204.83579%205.36612%204.5%205.78033%204.5H11.7907C12.205%204.5%2012.5407%204.83579%2012.5407%205.25V11.2604C12.5407%2011.6746%2012.205%2012.0104%2011.7907%2012.0104C11.3765%2012.0104%2011.0407%2011.6746%2011.0407%2011.2604V7.06066L5.78033%2012.3211C5.48744%2012.614%205.01256%2012.614%204.71967%2012.3211C4.42678%2012.0282%204.42678%2011.5533%204.71967%2011.2604L9.98008%206H5.78033C5.36612%206%205.03033%205.66421%205.03033%205.25Z'%20fill='%23231F20'/%3e%3c/g%3e%3c/svg%3e" alt="sipka doprava-hore" class="w-4 h-4">
+                    </button>
+                  </div>
+                  <!-- Bottom: text -->
+                  <div class="swiper-slide-textarea">
+                    <h3>Ubytovanie</h3>
+                    <p class="mt-8 mb-12">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur lectus eu metus facilisis egestas.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide -->
+              <div class="swiper-slide swiper-slide-service"
+              style="background-image: url('/assets/sluzby-DryS0I-C.png');">  
+                <div class="flex flex-col justify-between h-full">
+                  <!-- Top: štítok a ikona -->
+                  <div class="flex items-center justify-between">
+                    <div class="swiper-slide-heading">
+                      Ubytovanie
+                    </div>
+                    <button class="swiper-btn-link">
+                      <img src="data:image/svg+xml,%3csvg%20width='17'%20height='17'%20viewBox='0%200%2017%2017'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='arrow-up-right'%3e%3cpath%20id='Vector%20(Stroke)'%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M5.03033%205.25C5.03033%204.83579%205.36612%204.5%205.78033%204.5H11.7907C12.205%204.5%2012.5407%204.83579%2012.5407%205.25V11.2604C12.5407%2011.6746%2012.205%2012.0104%2011.7907%2012.0104C11.3765%2012.0104%2011.0407%2011.6746%2011.0407%2011.2604V7.06066L5.78033%2012.3211C5.48744%2012.614%205.01256%2012.614%204.71967%2012.3211C4.42678%2012.0282%204.42678%2011.5533%204.71967%2011.2604L9.98008%206H5.78033C5.36612%206%205.03033%205.66421%205.03033%205.25Z'%20fill='%23231F20'/%3e%3c/g%3e%3c/svg%3e" alt="sipka doprava-hore" class="w-4 h-4">
+                    </button>
+                  </div>
+                  <!-- Bottom: text -->
+                  <div class="swiper-slide-textarea">
+                    <h3>Ubytovanie</h3>
+                    <p class="mt-8 mb-12">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur lectus eu metus facilisis egestas.
+                    </p>
+                  </div>
+                </div>
+              </div>
+                            
+            </div>
+          </div>
+          <!-- Navigácia -->
+          <div class="flex items-center justify-center lg:justify-end gap-8.75 mt-40 lg:mt-11">
+            <button id="services-prev" class="swiper-nav-button">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAQCAYAAADwMZRfAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACbSURBVHgB7ZG9DcJADIXf3aXnpwcs3RKMwQrZJEwATIDo6JiBQRCGAZAXOJmkA+cSKUW6fOXnp2dLBiZGwVkRV7RTj0NHXpzi+Hjz5VcWrdYAgYI6SpA87tYFKz4ivJzNF/WN21aD4vR88dVqj/y2SgE2mhufy2dLmFm8Q/knHarGYyiR6BY3pHFN575c0TdMQBnq/yWHPSYG8QUw4ij7WuwMTgAAAABJRU5ErkJggg==" class="rotate-90">
+            </button>
+            <button id="services-next" class="swiper-nav-button">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAQCAYAAADwMZRfAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACbSURBVHgB7ZG9DcJADIXf3aXnpwcs3RKMwQrZJEwATIDo6JiBQRCGAZAXOJmkA+cSKUW6fOXnp2dLBiZGwVkRV7RTj0NHXpzi+Hjz5VcWrdYAgYI6SpA87tYFKz4ivJzNF/WN21aD4vR88dVqj/y2SgE2mhufy2dLmFm8Q/knHarGYyiR6BY3pHFN575c0TdMQBnq/yWHPSYG8QUw4ij7WuwMTgAAAABJRU5ErkJggg==" class="-rotate-90">
+            </button>
+          </div>
+        </div>
+      </section>
+      
+
+      <!-- Join us -->
+      <section class="mt-18 lg:mt-40 flex flex-col items-center justify-center">
+        <h2>Staňte sa členom klubu</h2>
+        <p class="mt-11 lg:mt-18">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur lectus eu metus facilisis egestas.
+        </p>
+
+        <div class="relative flex flex-col lg:flex-row items-center justify-between lg:h-100 lg:px-30 py-10 mt-60 bg-[url('/src/assets/golf-pozadie.jpg')] bg-cover rounded-2xl overflow-visible">
+
+          <!-- Pozadie za hráčom -->
+          <img src="/assets/join-us-bg-DNdyVa8M.png" alt="Pozadie" class="absolute lg:left-[15%] bottom-[70%] lg:bottom-[10%] w-[80%] sm:w-[50%] lg:w-[30%] object-cover rounded-2xl z-0" />
+          
+          <!-- Hráč -->
+          <img src="/assets/join-us-CM21lOs5.png" alt="Golfista" class="absolute left-0 sm:left-[10%] lg:left-[5%] bottom-[70%] lg:bottom-[10%] w-full sm:w-[75%] lg:w-[45%] z-10" />
+        
+          <!-- Text + tlačidlo -->
+          <div class="ml-auto text-left max-lg:mt-40 max-lg:p-6 lg:w-1/2">
+            <p class="mb-18 max-lg:text-center">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur lectus eu metus facilisis egestas.
+              Curabitur efficitur egestas arcu, vel imperdiet sapien molestie et. Maecenas eget vehicula turpis.
+              Mauris consequat malesuada dolor id tristique.
+            </p>
+            <div class="flex items-center justify-center lg:justify-start">
+              <cta-button text="Prihláška GKHB"></cta-button>
+            </div>
+          </div>
+        
+        </div>
+      </section>
+      
+
+      <!-- Galéria -->
+      <section class="mt-18 lg:mt-32">
+        <h2 class="text-center mb-11 lg:mb-24">Galéria</h2>
+        <div class="relative px-13">
+
+          <!-- Navigačné šípky -->
+          <button id="gallery-prev"
+                  class="swiper-nav-button absolute left-0 top-1/2 -translate-y-1/2 z-10">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAQCAYAAADwMZRfAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACbSURBVHgB7ZG9DcJADIXf3aXnpwcs3RKMwQrZJEwATIDo6JiBQRCGAZAXOJmkA+cSKUW6fOXnp2dLBiZGwVkRV7RTj0NHXpzi+Hjz5VcWrdYAgYI6SpA87tYFKz4ivJzNF/WN21aD4vR88dVqj/y2SgE2mhufy2dLmFm8Q/knHarGYyiR6BY3pHFN575c0TdMQBnq/yWHPSYG8QUw4ij7WuwMTgAAAABJRU5ErkJggg==" class="rotate-90">
+          </button>
+          <button id="gallery-next"
+                  class="swiper-nav-button absolute right-0 top-1/2 -translate-y-1/2 z-10">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAQCAYAAADwMZRfAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACbSURBVHgB7ZG9DcJADIXf3aXnpwcs3RKMwQrZJEwATIDo6JiBQRCGAZAXOJmkA+cSKUW6fOXnp2dLBiZGwVkRV7RTj0NHXpzi+Hjz5VcWrdYAgYI6SpA87tYFKz4ivJzNF/WN21aD4vR88dVqj/y2SgE2mhufy2dLmFm8Q/knHarGYyiR6BY3pHFN575c0TdMQBnq/yWHPSYG8QUw4ij7WuwMTgAAAABJRU5ErkJggg==" class="-rotate-90">
+          </button>
+
+          <!-- Swiper container -->
+          <div class="swiper swiper-gallery">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide swiper-slide-gallery">
+                <img src="/assets/galeria2-DRhsbRQ5.png"
+                    class="rounded-xl w-full object-cover" />
+              </div>
+
+              <div class="swiper-slide swiper-slide-gallery">
+                <img src="/assets/galeria1-lL7jIjHX.png"
+                    class="rounded-xl w-full object-cover shadow-xl" />
+              </div>
+
+              <div class="swiper-slide swiper-slide-gallery">
+                <img src="/assets/galeria2-DRhsbRQ5.png"
+                    class="rounded-xl w-full object-cover" />
+              </div>
+
+              <div class="swiper-slide swiper-slide-gallery">
+                <img src="/assets/galeria1-lL7jIjHX.png"
+                    class="rounded-xl w-full object-cover shadow-xl" />
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <!-- Mapa -->
+      <section class="mt-18 lg:mt-40">
+        <h2 class="text-center">Mapa golfového ihriska</h2>
+        <p class="text-center mt-11 lg:mt-18">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur lectus eu metus facilisis egestas.</p>
+        <div class="mt-24 flex flex-col-reverse lg:flex-row items-center justify-center gap-16">
+          
+          <!-- Tabuľka -->
+          <div class="w-full max-w-[400px] rounded-lg border border-gray-300 overflow-hidden">
+            <div class="grid grid-cols-2">
+              <!-- Hlavička -->
+              <div class="bg-[#0000000F] font-semibold text-[0.75rem] p-3">Otváracia doba</div>
+              <div class="bg-[#0000000F] p-3"></div>
+
+              <!-- Riadky -->
+              <div class="table-cell">Pondelok</div>
+              <div class="table-cell">10:00 - 20:00</div>
+
+              <div class="table-cell">Utorok</div>
+              <div class="table-cell">10:00 - 20:00</div>
+
+              <div class="table-cell">Streda</div>
+              <div class="table-cell">10:00 - 20:00</div>
+
+              <div class="table-cell">Štvrtok</div>
+              <div class="table-cell">10:00 - 20:00</div>
+
+              <div class="table-cell">Piatok</div>
+              <div class="table-cell">10:00 - 20:00</div>
+
+              <div class="table-cell">Sobota</div>
+              <div class="table-cell">10:00 - 20:00</div>
+
+              <div class="table-cell">Nedeľa</div>
+              <div class="table-cell">10:00 - 20:00</div>
+            </div>
+          </div>
+
+          <!-- Mapa -->
+          <img src="/assets/mapka-ihriska-Ca4CA9Jk.png"
+              alt="mapa ihriska"
+              class="w-full max-w-xl object-contain" />
+        </div>
+      </section>
+
+
+    </main>
+
+    <footer class="bg-black px-4 pt-14 lg:pt-20 mt-25 lg:mt-41">
+      <div class="relative">
+        <div class="flex max-lg:flex-col items-center lg:items-start justify-between mb-20">
+
+          <!-- LEFT -->
+          <div class="flex flex-col items-center justify-center lg:w-[34%]">
+            <div class="mb-21">
+              <h2 class="font-medium mb-7 leading-none text-white">Lorem ipsum<br>dolor sit amet</h2>
+              <p class="text-white text-[0.875rem]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur lectus eu metus facilisis egestas.</p>
+            </div>
+            <form class="flex items-center justify-between w-full mb-16">
+              <input type="email" placeholder="Zadajte svoj email"
+                      class="bg-white rounded-full px-4 py-2 text-black w-full max-w-2/3" />
+              <button type="submit" class="rounded-full bg-white text-black px-8 py-2">Odoberať</button>
+            </form>
+            <div class="flex items-center justify-center lg:justify-start gap-9 w-full">
+              <a href="https://www.facebook.com/golfklubborsa/">
+                <img src="data:image/svg+xml,%3csvg%20width='34'%20height='34'%20viewBox='0%200%2034%2034'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='gg:facebook'%3e%3cpath%20id='Vector'%20d='M12.8731%2030.0903H18.4714V18.8798H23.5154L24.0696%2013.3095H18.4714V10.4964C18.4714%2010.1252%2018.6188%209.7692%2018.8813%209.50673C19.1438%209.24426%2019.4997%209.09681%2019.8709%209.09681H24.0696V3.49854H19.8709C18.015%203.49854%2016.2351%204.23581%2014.9227%205.54815C13.6104%206.8605%2012.8731%208.64043%2012.8731%2010.4964V13.3095H10.074L9.51973%2018.8798H12.8731V30.0903Z'%20fill='white'/%3e%3c/g%3e%3c/svg%3e" alt="facebook" />
+              </a>
+              <a href="https://www.instagram.com/golfklubborsa/">
+                <img src="data:image/svg+xml,%3csvg%20width='35'%20height='34'%20viewBox='0%200%2035%2034'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='basil:instagram-solid'%3e%3cpath%20id='Vector'%20d='M17.6309%2012.2466C16.4245%2012.2466%2015.2676%2012.7258%2014.4146%2013.5788C13.5615%2014.4319%2013.0823%2015.5888%2013.0823%2016.7952C13.0823%2018.0015%2013.5615%2019.1585%2014.4146%2020.0115C15.2676%2020.8645%2016.4245%2021.3438%2017.6309%2021.3438C18.8373%2021.3438%2019.9942%2020.8645%2020.8472%2020.0115C21.7003%2019.1585%2022.1795%2018.0015%2022.1795%2016.7952C22.1795%2015.5888%2021.7003%2014.4319%2020.8472%2013.5788C19.9942%2012.7258%2018.8373%2012.2466%2017.6309%2012.2466Z'%20fill='white'/%3e%3cpath%20id='Vector_2'%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M10.3112%204.31338C15.1761%203.77445%2020.0857%203.77445%2024.9506%204.31338C27.6084%204.61009%2029.7512%206.70244%2030.0633%209.37002C30.6398%2014.303%2030.6398%2019.2864%2030.0633%2024.2194C29.7512%2026.887%2027.6084%2028.9794%2024.9521%2029.2775C20.0866%2029.8165%2015.1766%2029.8165%2010.3112%2029.2775C7.65339%2028.9794%205.51066%2026.887%205.19855%2024.2208C4.62191%2019.2874%204.62191%2014.3035%205.19855%209.37002C5.51066%206.70244%207.65339%204.61009%2010.3112%204.31338ZM24.6287%208.39732C24.2576%208.39732%2023.9016%208.54477%2023.6391%208.80724C23.3766%209.06971%2023.2292%209.4257%2023.2292%209.79689C23.2292%2010.1681%2023.3766%2010.5241%2023.6391%2010.7865C23.9016%2011.049%2024.2576%2011.1965%2024.6287%2011.1965C24.9999%2011.1965%2025.3559%2011.049%2025.6184%2010.7865C25.8809%2010.5241%2026.0283%2010.1681%2026.0283%209.79689C26.0283%209.4257%2025.8809%209.06971%2025.6184%208.80724C25.3559%208.54477%2024.9999%208.39732%2024.6287%208.39732ZM10.983%2016.7947C10.983%2015.0316%2011.6834%2013.3406%2012.9301%2012.0939C14.1768%2010.8472%2015.8678%2010.1468%2017.6309%2010.1468C19.3941%2010.1468%2021.085%2010.8472%2022.3317%2012.0939C23.5784%2013.3406%2024.2789%2015.0316%2024.2789%2016.7947C24.2789%2018.5579%2023.5784%2020.2488%2022.3317%2021.4955C21.085%2022.7423%2019.3941%2023.4427%2017.6309%2023.4427C15.8678%2023.4427%2014.1768%2022.7423%2012.9301%2021.4955C11.6834%2020.2488%2010.983%2018.5579%2010.983%2016.7947Z'%20fill='white'/%3e%3c/g%3e%3c/svg%3e" alt="instagram" />
+              </a>
+              <a href="https://www.tripadvisor.com/Attraction_Review-g15880340-d23899155-Reviews-Golf_Resort_Hruba_Borsa-Hruba_Borsa_Bratislava_Region.html">
+                <img src="data:image/svg+xml,%3csvg%20width='34'%20height='34'%20viewBox='0%200%2034%2034'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='simple-icons:tripadvisor'%20clip-path='url(%23clip0_74_494)'%3e%3cpath%20id='Vector'%20d='M17.2137%206.01074C13.4769%206.01074%209.74282%207.10801%206.51401%209.30393H0.4105L3.15785%2012.292C1.90609%2013.4325%201.02857%2014.9249%200.640589%2016.5733C0.252605%2018.2216%200.372299%2019.9488%200.983946%2021.5279C1.59559%2023.1069%202.67058%2024.4641%204.0677%2025.421C5.46481%2026.3779%207.1187%2026.8898%208.8121%2026.8895C10.9279%2026.8908%2012.9657%2026.0907%2014.5153%2024.6502L17.2053%2027.5781L19.8953%2024.653C21.4436%2026.0927%2023.4801%2026.8919%2025.5943%2026.8895C27.821%2026.8895%2029.9564%2026.0052%2031.5312%2024.4309C33.1059%2022.8567%2033.991%2020.7215%2033.9917%2018.4949C33.9932%2017.3271%2033.7503%2016.1719%2033.2786%2015.1036C32.8068%2014.0354%2032.1168%2013.0776%2031.2528%2012.292L34.0001%209.30393H27.912C24.7577%207.15636%2021.0297%206.00878%2017.2137%206.01074ZM17.2053%208.7539C19.348%208.7539%2021.4922%209.17797%2023.509%2010.0177C19.9247%2011.3893%2017.2053%2014.5971%2017.2053%2018.3339C17.2053%2014.5957%2014.4873%2011.3893%2010.9017%2010.0177C12.8988%209.18452%2015.0413%208.75404%2017.2053%208.7539ZM8.8107%2012.8154C9.55672%2012.8154%2010.2954%2012.9624%2010.9847%2013.2479C11.6739%2013.5334%2012.3002%2013.9518%2012.8277%2014.4793C13.3552%2015.0068%2013.7736%2015.6331%2014.0591%2016.3223C14.3446%2017.0116%2014.4915%2017.7503%2014.4915%2018.4963C14.4915%2019.2423%2014.3446%2019.981%2014.0591%2020.6703C13.7736%2021.3595%2013.3552%2021.9857%2012.8277%2022.5133C12.3002%2023.0408%2011.6739%2023.4592%2010.9847%2023.7447C10.2954%2024.0302%209.55672%2024.1771%208.8107%2024.1771C7.30405%2024.1771%205.85911%2023.5786%204.79374%2022.5133C3.72837%2021.4479%203.12986%2020.0029%203.12986%2018.4963C3.12986%2016.9896%203.72837%2015.5447%204.79374%2014.4793C5.85911%2013.414%207.30405%2012.8154%208.8107%2012.8154ZM25.5943%2012.8182C26.3401%2012.818%2027.0786%2012.9646%2027.7676%2013.2497C28.4567%2013.5348%2029.0829%2013.9529%2029.6104%2014.48C30.1379%2015.0071%2030.5564%2015.633%2030.8421%2016.3219C31.1277%2017.0108%2031.2749%2017.7491%2031.2752%2018.4949C31.2754%2019.2406%2031.1288%2019.9791%2030.8437%2020.6682C30.5586%2021.3573%2030.1405%2021.9835%2029.6134%2022.511C29.0863%2023.0385%2028.4604%2023.457%2027.7715%2023.7427C27.0826%2024.0283%2026.3443%2024.1755%2025.5985%2024.1757C24.0924%2024.1763%2022.6478%2023.5785%2021.5824%2022.514C20.5171%2021.4494%2019.9182%2020.0052%2019.9177%2018.4991C19.9171%2016.993%2020.5149%2015.5484%2021.5795%2014.483C22.644%2013.4176%2024.0882%2012.8188%2025.5943%2012.8182ZM8.8107%2015.5194C8.02081%2015.5194%207.26328%2015.8332%206.70474%2016.3917C6.14621%2016.9503%205.83242%2017.7078%205.83242%2018.4977C5.83242%2019.2876%206.14621%2020.0451%206.70474%2020.6036C7.26328%2021.1622%208.02081%2021.476%208.8107%2021.476C9.60059%2021.476%2010.3581%2021.1622%2010.9167%2020.6036C11.4752%2020.0451%2011.789%2019.2876%2011.789%2018.4977C11.789%2017.7078%2011.4752%2016.9503%2010.9167%2016.3917C10.3581%2015.8332%209.60059%2015.5194%208.8107%2015.5194ZM25.5943%2015.5194C24.8044%2015.5194%2024.0469%2015.8332%2023.4884%2016.3917C22.9298%2016.9503%2022.616%2017.7078%2022.616%2018.4977C22.616%2019.2876%2022.9298%2020.0451%2023.4884%2020.6036C24.0469%2021.1622%2024.8044%2021.476%2025.5943%2021.476C26.3842%2021.476%2027.1417%2021.1622%2027.7003%2020.6036C28.2588%2020.0451%2028.5726%2019.2876%2028.5726%2018.4977C28.5726%2017.7078%2028.2588%2016.9503%2027.7003%2016.3917C27.1417%2015.8332%2026.3842%2015.5194%2025.5943%2015.5194Z'%20fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_74_494'%3e%3crect%20width='33.5896'%20height='33.5896'%20fill='white'%20transform='translate(0.4104)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="tripadvisor">
+              </a>
+            </div>
+          </div>
+      
+          <!-- MID -->
+          <div class="lg:w-[30%] max-lg:my-20 max-lg:w-full">
+            <div class="flex flex-col lg:flex-row items-center justify-center text-white h-full gap-6 lg:gap-17">
+              <ul class="flex flex-col items-center lg:items-start justify-between gap-4 max-lg:w-full">
+                <li><a href="#">Domov</a></li>
+                <li><a href="#">Golfový areál</a></li>
+                <li><a href="#">Členstvo a poplatky</a></li>
+                <li><a href="#">Služby</a></li>
+                <li><a href="#">Turnaje</a></li>
+                <li><a href="#">Akcie</a></li>
+              </ul>
+              <ul class="flex flex-col items-center lg:items-start justify-between gap-4 max-lg:w-full">
+                <li><a href="#">O nás</a></li>
+                <li><a href="#">Juniori</a></li>
+                <li><a href="#">Tipy a novinky</a></li>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="#">Galéria</a></li>
+                <li><a href="#">Cenník</a></li>
+              </ul>
+            </div>
+          </div>
+  
+          <!-- RIGHT -->
+          <div class="lg:w-[24%] mb-20">
+            <div class="flex items-center justify-center lg:justify-start">
+              <img src="data:image/png;base64,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" alt="Borsa logo" class="h-15" />
+            </div>
+            <div class="mt-10">
+              <p class="footer-text mb-3.5">
+                GOLFOVÝ KLUB HRUBÁ BORŠA<br>
+                Golfová 592/61,<br>
+                900 50, Hrubá Borša<br>
+                Slovenská republika
+              </p>
+              <p class="footer-text mb-8">
+                Recepcia GREEN RESORT<br>
+                <a class="cursor-pointer">Tel.: +421 902 602 737</a><br>
+                E-mail: <a href="mailto:recepcia@golfborsa.sk" class="cursor-pointer">recepcia@golfborsa.sk</a>
+              </p>
+              <p class="footer-text mb-8">
+                GKHB Management<br>
+                Tel.:<br>
+                <a class="cursor-pointer">+421 910 925 924</a><br>
+                <a class="cursor-pointer">+421 911 744 788</a>
+              </p>
+              <p class="footer-text">
+                E-mail: <a href="mailto:info@golfborsa.sk" class=" cursor-pointer">info@golfborsa.sk</a>
+              </p>
+            </div>
+          </div>
+        </div>
+    
+        <img src="/assets/partner-logo-BbXU7j88.png" alt="Partner" class="absolute top-[95%] lg:top-[55%] left-[38%] lg:left-[45%] mx-auto h-20 lg:h-54" />
+      </div>
+  
+      <div class="border-t border-b border-[#7B7E86] py-8 mx-auto">
+        <img src="/assets/cerpanie-fondov-B1HqA_tH.png" alt="cerpanie fondov" class="mx-auto lg:w-[50%]">
+      </div>
+  
+      <!-- Bottom copyright -->
+      <div class="text-center text-[0.75rem] text-white py-2">
+        Created by <a href="https://www.onlima.sk/" class="cursor-pointer">Onlima</a>
+      </div>
+    </footer>
+
+  </body>
+</html>
